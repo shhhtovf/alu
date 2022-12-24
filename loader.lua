@@ -6,7 +6,7 @@ if PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
 else
   game.StarterGui:SetCore("SendNotification", {
       Icon = "rbxassetid://10845671105";
-      Title = "JJT x hub", 
+      Title = "Alucard Hub - Game Check", 
       Text = "GAME IS NOT SUPPORTED!"
   })
 end
