@@ -1,6 +1,4 @@
 
-
-	repeat wait() until game:IsLoaded()
 	if getgenv().Setting then else
 		getgenv().Setting = {
 			["Join Team"] = "Pirate", -- "Pirate","Marine"
