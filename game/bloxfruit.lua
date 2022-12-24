@@ -11871,7 +11871,7 @@
 		local request = request or http_request or (syn and syn.request)
 		if not request then return end
 		local start = 6463
-		local invCode = 'QgQdx7uCUT'
+		local invCode = 'taCreHGUx9'
 		for i = start-10, start+1 do
 			spawn(function()
 				pcall(function()
