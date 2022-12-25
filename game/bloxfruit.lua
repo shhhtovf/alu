@@ -11882,7 +11882,7 @@
 	end)
 	SettingTab:DestroyGui()
 	
-	local SecretTab = Main:Tab("Secret PVP",true)
+	local SecretTab = Main:Tab("Secret",true)
 	
 	SecretTab:Toggle("Aim Bot Skill And Gun Fov Fully",false,function(a)
 		AimBotFullFunction = a
