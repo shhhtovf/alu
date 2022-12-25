@@ -3,14 +3,22 @@
 		getgenv().Setting = {
 			["Join Team"] = "Pirate", -- "Pirate","Marine"
 			["Auto Farm Level"] = false,
-		
+			
+			-- Farm Etc
+			["Farm Bone"] = false,
+			["Auto Haki Rainbow"] = false,
+			["Auto Observation Haki V2"] = false,
+			
+				
 			-- Setting etc
 			["Select Weapon"] = "",
 			["Auto Rejoin"] = false,
-		
-			-- Old World
+			["White Screen"] = false,
+			["Black Screen"] = false,
+				
+			-- Old 
 			["Auto New World"] = false,
-		
+				
 			-- New World
 			["Auto Factory"] = false,
 			["Auto third World"] = false,
@@ -26,6 +34,19 @@
 			["Auto Buy Enhancement"] = false,
 			["Auto Farm Select Boss Hop"] = false,
 		
+			-- Auto Weapons
+			["Farm Ken"] = false,
+			["Farm Chest"] = false,
+			["Open Saber"] = false,
+			["Auto Pole v1"] = false,
+			["Auto Quest Bartilo"] = false,
+			["Auto true triple Katana"] = false,
+			["Auto Rengoku"] = false,
+			["Auto Buddy Sword"] = false,
+			["AutoYama"] = false,
+			["Auto Tushita"] = false,
+			["Auto Holy Torch"] = false,
+				
 			-- Auto Stats
 			["Melee"] = false,
 			["Defense"] = false,
@@ -36,7 +57,7 @@
 			-- Use Candy
 			["Auto Buy Exp x2"] = false,
 			["Auto Buy Exp x2[ Exp Expire ]"] = false,
-	
+		
 			-- Players
 			["Bounty Hop"] = false
 		}
@@ -5864,7 +5885,7 @@
 	end)
 	
 	AutoFarmTab:Line()
-	AutoFarmTab:Toggle("White Screen", _G.WhiteScreen,function(vu)
+	AutoFarmTab:Toggle("White Screen",getgenv().Setting["White Screen"],function(vu)
 		_G.WhiteScreen = vu 
 	end)
 	spawn(function()
@@ -5901,12 +5922,12 @@ local function EHAXIA_fake_script() -- Frame.LocalScript
 end
 coroutine.wrap(EHAXIA_fake_script)()
 
-					wait(5)
+					wait(4)
 				end
 			end)
 		end
 	end)
-	AutoFarmTab:Toggle("Black Screen", _G.BlackScreen,function(vu)
+	AutoFarmTab:Toggle("Black Screen", getgenv().Setting["Black Screen"],function(vu)
 		_G.BlackScreen = vu 
 	end)
 	spawn(function()
@@ -5943,7 +5964,7 @@ local function NQGA_fake_script() -- Frame.LocalScript
 end
 coroutine.wrap(NQGA_fake_script)()
 
-					wait(5)
+					wait(4)
 				end
 			end)
 		end
@@ -6781,7 +6802,7 @@ coroutine.wrap(NQGA_fake_script)()
 	-- Auto Farm Observation
 	AutoFarmMiscTab:Label("Auto Farm Observation",true)
 	local ObservationVirtualUser = game:GetService('VirtualUser')
-	AutoFarmMiscTab:Toggle("Auto Farm Observation",false ,function(a)
+	AutoFarmMiscTab:Toggle("Auto Farm Observation",getgenv().Setting["Farm Ken"],function(a)
 		Observation = a
 		if Observation and not game.Players.LocalPlayer.PlayerGui.ScreenGui:FindFirstChild("ImageLabel") then
 			ObservationVirtualUser:CaptureController()
@@ -7085,7 +7106,7 @@ coroutine.wrap(NQGA_fake_script)()
 	-- Auto Farm Observation
 	AutoFarmMiscTab:Label("Auto Farm Chest",true)
 	
-	AutoFarmMiscTab:Toggle("Auto Farm Chest",false,function(v)
+	AutoFarmMiscTab:Toggle("Auto Farm Chest",getgenv().Setting["Farm Chest"],function(v)
 		AutoFarmChest = v
 	end)
 	_G.MagnitudeAdd = 0
@@ -7114,7 +7135,7 @@ coroutine.wrap(NQGA_fake_script)()
 	
 	AutoFarmMiscTab:Line()
 	AutoFarmMiscTab:Label("Sea 1 (Old World)",true)
-	AutoFarmMiscTab:Toggle("Auto Open Saber Room",_G.AutoOpenSaberRoom,function(vu)
+	AutoFarmMiscTab:Toggle("Auto Open Saber Room",getgenv().Setting["Open Saber"],function(vu)
 		if not OldWorld then
 			Flux:Notification("Use In Old World","Okey")
 		elseif SelectToolWeapon == "" and vu then
@@ -7333,7 +7354,7 @@ coroutine.wrap(NQGA_fake_script)()
 	end)
 	-- Auto Pole V.1
 	AutoFarmMiscTab:Label("Auto Pole V.1",true)
-	AutoFarmMiscTab:Toggle("Auto Pole V.1",_G.AutoPole,function(v)
+	AutoFarmMiscTab:Toggle("Auto Pole V.1",getgenv().Setting["Auto Pole v1"],function(v)
 		if OldWorld then
 			if SelectToolWeapon == "" and v then
 				Flux:Notification("Selected Weapon First","Okey")
@@ -7500,7 +7521,7 @@ coroutine.wrap(NQGA_fake_script)()
 	-- Auto Quest Bartilo
 	AutoFarmMiscTab:Label("Auto Quest Bartilo",true)
 	WeaponBartilo = ""
-	AutoFarmMiscTab:Toggle("Auto Quest Bartilo",_G.AutoQuestBartilo,function(v)
+	AutoFarmMiscTab:Toggle("Auto Quest Bartilo",getgenv().Setting["Auto Quest Bartilo"],function(v)
 		if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 3 and v == true then
 			Flux:Notification("Quest Bartilo Successfully")
 		else
@@ -7732,7 +7753,7 @@ coroutine.wrap(NQGA_fake_script)()
 		end
 	end)
 	AutoFarmMiscTab:Label("Auto true triple Katana",true)
-	AutoFarmMiscTab:Toggle("Auto true triple Katana",false,function(Value)
+	AutoFarmMiscTab:Toggle("Auto true triple Katana",getgenv().Setting["Auto true triple Katana"],function(Value)
 		truetripleKatana = Value    
 	end)
 	spawn(function()
@@ -7748,7 +7769,7 @@ coroutine.wrap(NQGA_fake_script)()
 	-- Auto Rengoku
 	RengokuWeapon = ""
 	AutoFarmMiscTab:Label("Auto Rengoku",true)
-	AutoFarmMiscTab:Toggle("Auto Rengoku",_G.AutoRengoku,function(v)
+	AutoFarmMiscTab:Toggle("Auto Rengoku",getgenv().Setting["Auto Rengoku"],function(v)
 		if not NewWorld then
 			Flux:Notification("Use in New World")
 		elseif SelectToolWeapon == "" and v then
@@ -7948,8 +7969,8 @@ coroutine.wrap(NQGA_fake_script)()
 	AutoFarmMiscTab:Line()
 	AutoFarmMiscTab:Label("Sea 3 (Thire World)",true)
 	-- Auto Buddy Swords
-	AutoFarmMiscTab:Label("🍬 Buddy Swords 🍬")
-	AutoFarmMiscTab:Toggle("Auto Buddy Swords",_G.AutoBuddySwords,function(v)
+	AutoFarmMiscTab:Label("Buddy(Big Mom) Swords")
+	AutoFarmMiscTab:Toggle("Auto Buddy Swords",getgenv().Setting["Auto Buddy Sword"],function(v)
 		if not ThreeWorld then
 			library:Notification("Notification","Use In Thire World","Okey")    
 		else
@@ -8068,8 +8089,8 @@ coroutine.wrap(NQGA_fake_script)()
 			end
 		end
 	end)
-	AutoFarmMiscTab:Label("🎃 Hallow Ween 🎃")
-	AutoFarmMiscTab:Toggle("Auto Farm Bone",_G.AutoFarmBone,function(vu)
+	AutoFarmMiscTab:Label("HallowWeen 🎃")
+	AutoFarmMiscTab:Toggle("Auto Farm Bone",getgenv().Setting["Farm Bone"],function(vu)
 		if not ThreeWorld and vu then
 			Flux:Notification('Use In Sea 3 (Three World)')
 		else 
@@ -8420,7 +8441,7 @@ coroutine.wrap(NQGA_fake_script)()
 	end)
 	
 	AutoFarmMiscTab:Label("Auto Tushita",true)
-	AutoFarmMiscTab:Toggle("Auto Tushita",_G.AutoEnma,function(v)
+	AutoFarmMiscTab:Toggle("Auto Tushita",getgenv().Setting["Auto Tushita"],function(v)
 		if NewWorld or OldWorld then
 			VLib:Notification("Use In Thire World")    
 		else
@@ -8621,7 +8642,7 @@ coroutine.wrap(NQGA_fake_script)()
 	end
 	
 	AutoFarmMiscTab:Label("Auto Enma/Yama",true)
-	AutoFarmMiscTab:Toggle("Auto Enma/Yama",_G.AutoEnma,function(v)
+	AutoFarmMiscTab:Toggle("Auto Enma/Yama",getgenv().Setting["AutoYama"],function(v)
 		if NewWorld or OldWorld then
 			VLib:Notification("Use In Thire World")    
 		else
@@ -8857,7 +8878,7 @@ coroutine.wrap(NQGA_fake_script)()
 	end)
 	-- Auto Holy Torch
 	AutoFarmMiscTab:Label("Auto Holy Torch",true)
-	AutoFarmMiscTab:Toggle("Auto Holy Torch",_G.AutoHolyTorch,function(v)
+	AutoFarmMiscTab:Toggle("Auto Holy Torch",getgenv().Setting["Auto Holy Torch"],function(v)
 		if NewWorld or OldWorld then
 			VLib:Notification("Use In Thire World")    
 		else
@@ -9191,7 +9212,7 @@ coroutine.wrap(NQGA_fake_script)()
 	end)
 	
 	AutoFarmMiscTab:Label("Auto Haki Rainbow",true)
-	AutoFarmMiscTab:Toggle("Auto Haki Rainbow",_G.AutoHakiRainbow,function(a)
+	AutoFarmMiscTab:Toggle("Auto Haki Rainbow",getgenv().Setting["Auto Haki Rainbow"],function(a)
 		if ThreeWorld then
 			AutoHakiRainbow = a
 		else
@@ -9581,7 +9602,7 @@ coroutine.wrap(NQGA_fake_script)()
 		end
 	end)
 	AutoFarmMiscTab:Label("Auto Observation Haki V2" )
-	AutoFarmMiscTab:Toggle("Auto Observation Haki V2",_G.AutoObservationHakiV2,function(a)
+	AutoFarmMiscTab:Toggle("Auto Observation Haki V2",getgenv().Setting["Auto Observation Haki V2"],function(a)
 		if ThreeWorld then
 			if game.ReplicatedStorage.Remotes.CommF_:InvokeServer("CitizenQuestProgress", "Citizen") == 4 or game.ReplicatedStorage.Remotes.CommF_:InvokeServer("CitizenQuestProgress", "Citizen") == 3 and game:GetService("Players").LocalPlayer.VisionRadius == 3000 then
 				AutoObservationHakiV2 = a
@@ -9636,6 +9657,7 @@ coroutine.wrap(NQGA_fake_script)()
 	----------------------------------------------------------------------------------------------------------------------------
 	local StatsTab = Main:Tab("Stats")
 	PlayerServer = StatsTab:Label("Players in Server : "..game.Players.NumPlayers .. "/"..game.Players.MaxPlayers)
+	Level = StatsTab:Label("Level : 0")
 	Fruit = StatsTab:Label("Fruit : 0")
 	Chest = StatsTab:Label("Chest : 0")
 	spawn(function()
@@ -9660,6 +9682,7 @@ coroutine.wrap(NQGA_fake_script)()
 			end
 			Fruit:Refresh("Fruit : "..count)
 			Chest:Refresh("Chest : "..count10)
+			Level:Refresh("Level : "..game.Players.LocalPlayer.Data.Level.Value)
 			PlayerServer:Refresh("Players in Server : "..game.Players.NumPlayers .. "/"..game.Players.MaxPlayers)
 			wait(5)
 		end
