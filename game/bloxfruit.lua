@@ -210,15 +210,15 @@
 			ColorIIIIIII = getgenv().Theme.Slider.LeftColor
 			ColorIIIIIIII = getgenv().Theme.Slider.RightColor
 		else
-			ColorII = Color3.fromRGB(179, 179, 255)
+			ColorII = Color3.fromRGB(255, 0, 0)
 	
-			ColorIII = Color3.fromRGB(230, 230, 255)
+			ColorIII = Color3.fromRGB(255, 0, 0)
 			ColorIIII = Color3.fromRGB(0, 0, 255)
 	
-			ColorIIIII = Color3.fromRGB(230, 230, 255)
+			ColorIIIII = Color3.fromRGB(255, 0, 0)
 			ColorIIIIII = Color3.fromRGB(0, 0, 255)
 	
-			ColorIIIIIII = Color3.fromRGB(230, 230, 255)
+			ColorIIIIIII = Color3.fromRGB(255, 0, 0)
 			ColorIIIIIIII = Color3.fromRGB(0, 0, 255)
 		end
 	
@@ -308,7 +308,7 @@
 		Toggleui.Size = UDim2.new(0, 120, 0, 30)
 		Toggleui.Font = Enum.Font.SourceSansSemibold
 		Toggleui.Text = "[ Right Control ]"
-		Toggleui.TextColor3 = Color3.fromRGB(173, 216, 230)
+		Toggleui.TextColor3 = Color3.fromRGB(255, 0, 0)
 		Toggleui.TextSize = 20.000
 	
 		HideTab.Name = "HideTab"
@@ -358,8 +358,8 @@
 		TabSet.Font = Enum.Font.SourceSansSemibold
 		TabSet.PlaceholderText = "Search : ..."
 		TabSet.Text = ""
-		TabSet.TextColor3 = Color3.fromRGB(255, 0, 0)
-		TabSet.PlaceholderColor3 = Color3.fromRGB(173, 216, 230)
+		TabSet.TextColor3 = Color3.fromRGB(	173, 202, 230)
+		TabSet.PlaceholderColor3 = Color3.fromRGB(173, 202, 230)
 		TabSet.TextSize = 18.000
 		TabSet.ClipsDescendants = true
 	
@@ -588,7 +588,7 @@
 			SectionBorder.Size = UDim2.new(1, 2, 1, 2)
 			SectionBorder.ZIndex = 3
 			SectionBorder.Image = "rbxassetid://3570695787"
-			SectionBorder.ImageColor3 = Color3.fromRGB(255, 0, 0)
+			SectionBorder.ImageColor3 = Color3.fromRGB(	173, 202, 230)
 			SectionBorder.ScaleType = Enum.ScaleType.Slice
 			SectionBorder.SliceCenter = Rect.new(100, 100, 100, 100)
 			SectionBorder.SliceScale = 0.050
@@ -719,7 +719,7 @@
 	
 				Button.Name = "Button"
 				Button.Parent = NameButton
-				Button.BackgroundColor3 = Color3.fromRGB(173, 216, 230)
+				Button.BackgroundColor3 = Color3.fromRGB(173, 202, 230)
 				Button.BackgroundTransparency = 1.000
 				Button.BorderSizePixel = 0
 				Button.ClipsDescendants = true
@@ -742,7 +742,7 @@
 				ButtonRounded.Size = UDim2.new(1, 0, 1, 0)
 				ButtonRounded.ZIndex = 5
 				ButtonRounded.Image = "rbxassetid://3570695787"
-				ButtonRounded.ImageColor3 = Color3.fromRGB(255, 75, 75)
+				ButtonRounded.ImageColor3 = Color3.fromRGB(	173, 202, 230)
 				ButtonRounded.ImageTransparency = 1.000
 				ButtonRounded.ScaleType = Enum.ScaleType.Slice
 				ButtonRounded.SliceCenter = Rect.new(100, 100, 100, 100)
@@ -944,7 +944,7 @@
 	
 				local function SetState(state)
 					if state then
-						TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(173, 216, 230)}):Play()
+						TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(255, 0, 0)}):Play()
 						TweenService:Create(TickCover, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {Position = UDim2.new(1, -30, 0.5, -7), Size = UDim2.new(0, 0, 0, 0)}):Play()
 					elseif not state then
 						TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(185, 185, 185)}):Play()
@@ -1453,7 +1453,7 @@
 						Find.Visible = false
 						TitleToggle.TextTransparency = 0
 						if SelectedOption ~= "nil" then
-							TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 0, 0)}):Play()
+							TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(	173, 202, 230)}):Play()
 						end
 						TweenService:Create(NameDropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.new(0, 475, 0, 30)}):Play()
 						TweenService:Create(Dropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {CanvasSize = UDim2.new(0, 0, 0, 0)}):Play()
@@ -1481,7 +1481,7 @@
 						Find.Visible = false
 						TitleToggle.TextTransparency = 0
 						if SelectedOption ~= "nil" then
-							TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 0, 0)}):Play()
+							TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(173, 202, 230)}):Play()
 						end
 						TweenService:Create(NameDropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.new(0, 475, 0, 30)}):Play()
 						TweenService:Create(Dropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {CanvasSize = UDim2.new(0, 0, 0, 0)}):Play()
@@ -1559,7 +1559,7 @@
 					Find.Visible = false
 					TitleToggle.TextTransparency = 0
 					if SelectedOption ~= "nil" then
-						TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 0, 0)}):Play()
+						TweenService:Create(TitleToggle, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(	173, 202, 230)}):Play()
 					end
 					TweenService:Create(NameDropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.new(0, 475, 0, 30)}):Play()
 					TweenService:Create(Dropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {CanvasSize = UDim2.new(0, 0, 0, 0)}):Play()
@@ -5864,6 +5864,90 @@
 	end)
 	
 	AutoFarmTab:Line()
+	AutoFarmTab:Toggle("White Screen", _G.WhiteScreen,function(vu)
+		_G.WhiteScreen = vu 
+	end)
+	spawn(function()
+		while wait() do
+			pcall(function()
+				if _G.WhiteScreen then
+					-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local WhiteScreen = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+
+--Properties:
+
+WhiteScreen.Name = "WhiteScreen"
+WhiteScreen.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+WhiteScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+WhiteScreen.ResetOnSpawn = false
+
+Frame.Parent = WhiteScreen
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(-0.383203775, 0, -0.311652988, 0)
+Frame.Size = UDim2.new(0, 20000, 0, 20000)
+
+-- Scripts:
+
+local function EHAXIA_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	wait(5)
+	script.Parent.Parent:Destroy()
+end
+coroutine.wrap(EHAXIA_fake_script)()
+
+					wait(5)
+				end
+			end)
+		end
+	end)
+	AutoFarmTab:Toggle("Black Screen", _G.BlackScreen,function(vu)
+		_G.BlackScreen = vu 
+	end)
+	spawn(function()
+		while wait() do
+			pcall(function()
+				if _G.BlackScreen then
+					-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BlackScreen = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+
+--Properties:
+
+BlackScreen.Name = "BlackScreen"
+BlackScreen.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BlackScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BlackScreen.ResetOnSpawn = false
+
+Frame.Parent = BlackScreen
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(-0.383203775, 0, -0.311652988, 0)
+Frame.Size = UDim2.new(0, 20000, 0, 20000)
+
+-- Scripts:
+
+local function NQGA_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	wait(5)
+	script.Parent.Parent:Destroy()
+end
+coroutine.wrap(NQGA_fake_script)()
+
+					wait(5)
+				end
+			end)
+		end
+	end)
 	AutoFarmTab:Label("Auto Farm Setting",true)
 	AUTOHAKI = true
 	AutoFarmTab:Toggle("Auto Haki", AUTOHAKI,function(Value)
