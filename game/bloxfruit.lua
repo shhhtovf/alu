@@ -3399,7 +3399,7 @@
 					LevelQuest = 2
 					NameMon = "Fishman Commando"
 					CFrameQuest = CFrame.new(61122.5625, 18.4716396, 1568.16504)
-					CFrameMon = CFrame.new(60946.6094, 48.6735229, 1525.916871)
+					CFrameMon = CFrame.new(61948.3,134.2,1558.3)
 				elseif MyLevel == 450 or MyLevel <= 474 then 
 					Nonquest = false
 					Ms = "God's Guard [Lv. 450]"
