@@ -308,7 +308,7 @@
 		Toggleui.Size = UDim2.new(0, 120, 0, 30)
 		Toggleui.Font = Enum.Font.SourceSansSemibold
 		Toggleui.Text = "[ Right Control ]"
-		Toggleui.TextColor3 = Color3.fromRGB(255, 0, 0)
+		Toggleui.TextColor3 = Color3.fromRGB(173, 216, 230)
 		Toggleui.TextSize = 20.000
 	
 		HideTab.Name = "HideTab"
@@ -359,7 +359,7 @@
 		TabSet.PlaceholderText = "Search : ..."
 		TabSet.Text = ""
 		TabSet.TextColor3 = Color3.fromRGB(255, 0, 0)
-		TabSet.PlaceholderColor3 = Color3.fromRGB(255, 0, 0)
+		TabSet.PlaceholderColor3 = Color3.fromRGB(173, 216, 230)
 		TabSet.TextSize = 18.000
 		TabSet.ClipsDescendants = true
 	
@@ -719,7 +719,7 @@
 	
 				Button.Name = "Button"
 				Button.Parent = NameButton
-				Button.BackgroundColor3 = Color3.fromRGB(255, 75, 75)
+				Button.BackgroundColor3 = Color3.fromRGB(173, 216, 230)
 				Button.BackgroundTransparency = 1.000
 				Button.BorderSizePixel = 0
 				Button.ClipsDescendants = true
@@ -944,7 +944,7 @@
 	
 				local function SetState(state)
 					if state then
-						TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(255, 0, 0)}):Play()
+						TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(173, 216, 230)}):Play()
 						TweenService:Create(TickCover, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {Position = UDim2.new(1, -30, 0.5, -7), Size = UDim2.new(0, 0, 0, 0)}):Play()
 					elseif not state then
 						TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(185, 185, 185)}):Play()
