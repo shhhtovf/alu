@@ -4936,7 +4936,7 @@
 		end)
 	end)
 	
-	local Main = library:Window("Alucard Hub","Blox Fruit 17.3")
+	local Main = library:Window("Alucard ","Blox Fruit 17.3")
 	local AutoFarmTab = Main:Tab("Auto Farm")
 	local MainAutoFarmFunction = AutoFarm(Ms,NameQuest,LevelQuest,NameMon,CFrameMon,CFrameQuest,"AutoFarmLevel")
 	spawn(function()
@@ -5848,7 +5848,7 @@
 	local SelectedWeapon = AutoFarmTab:Dropdown("Selected Weapon",Weapon,0,function(a)
 		SelectToolWeapon = a 
 	end)
-	AutoFarmTab:Button("Refrash", function()
+	AutoFarmTab:Button("Refresh", function()
 		Weapon = {}
 		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do  
 			if v:IsA("Tool") then
@@ -5877,21 +5877,21 @@
 		AutoRejoin = a
 	end)
 	UseTP = false
-	-- Bypass_TP_Toggle = AutoFarmTab:Toggle("Bypass TP",false,function(Value)
-	--     UseTP = Value
-	-- end)
-	-- AdminSettingTp = false
-	-- spawn(function()
-	--     while wait() do
-	--         if game:GetService("Players").LocalPlayer:FindFirstChild("Data").Stats.Defense.Level.Value <= 1 and AdminSettingTp then
-	--             Bypass_TP_Toggle:Unlock()
-	--         else
-	--             Bypass_TP_Toggle:Lock()
-	--         end
-	--         wait(10)
-	--     end
-	-- end)
-	AutoFarmTab:Toggle("Magnet", true,function(Value)
+	Bypass_TP_Toggle = AutoFarmTab:Toggle("Bypass TP",false,function(Value)
+	     UseTP = Value
+	 end)
+	AdminSettingTp = false
+	 spawn(function()
+	     while wait() do
+	         if game:GetService("Players").LocalPlayer:FindFirstChild("Data").Stats.Defense.Level.Value <= 1 and AdminSettingTp then
+	             Bypass_TP_Toggle:Unlock()
+	         else
+	             Bypass_TP_Toggle:UnLock()
+         end
+	         wait(10)
+	     end
+	 end)
+	AutoFarmTab:Toggle("Bring Mob", true,function(Value)
 		Magnet = Value  
 	end)
 	local vu = game:GetService("VirtualUser")
