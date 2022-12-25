@@ -210,15 +210,15 @@
 			ColorIIIIIII = getgenv().Theme.Slider.LeftColor
 			ColorIIIIIIII = getgenv().Theme.Slider.RightColor
 		else
-			ColorII = Color3.fromRGB(255, 0, 0)
+			ColorII = Color3.fromRGB(150, 150, 255)
 	
-			ColorIII = Color3.fromRGB(255, 0, 0)
+			ColorIII = Color3.fromRGB(150, 150, 255)
 			ColorIIII = Color3.fromRGB(0, 0, 255)
 	
-			ColorIIIII = Color3.fromRGB(255, 0, 0)
+			ColorIIIII = Color3.fromRGB(150, 150, 255)
 			ColorIIIIII = Color3.fromRGB(0, 0, 255)
 	
-			ColorIIIIIII = Color3.fromRGB(255, 0, 0)
+			ColorIIIIIII = Color3.fromRGB(150, 150, 255)
 			ColorIIIIIIII = Color3.fromRGB(0, 0, 255)
 		end
 	
