@@ -9657,7 +9657,6 @@ coroutine.wrap(NQGA_fake_script)()
 	----------------------------------------------------------------------------------------------------------------------------
 	local StatsTab = Main:Tab("Stats")
 	PlayerServer = StatsTab:Label("Players in Server : "..game.Players.NumPlayers .. "/"..game.Players.MaxPlayers)
-	Level = StatsTab:Label("Level : 0")
 	Fruit = StatsTab:Label("Fruit : 0")
 	Chest = StatsTab:Label("Chest : 0")
 	spawn(function()
@@ -9682,7 +9681,6 @@ coroutine.wrap(NQGA_fake_script)()
 			end
 			Fruit:Refresh("Fruit : "..count)
 			Chest:Refresh("Chest : "..count10)
-			Level:Refresh("Level : "..game.Players.LocalPlayer.Data.Level.Value)
 			PlayerServer:Refresh("Players in Server : "..game.Players.NumPlayers .. "/"..game.Players.MaxPlayers)
 			wait(5)
 		end
