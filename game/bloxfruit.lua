@@ -10630,7 +10630,7 @@ coroutine.wrap(NQGA_fake_script)()
 	end)
 	MiscTab:Line()
 	MiscTab:Label("Auto Farm Level Lock")
-	LockLevelValue = 2300
+	LockLevelValue = 2400
 	OldLevel = game.Players.localPlayer.Data.Level.Value
 	MiscTab:Slider("Select Level Lock",1,LockLevelValue,LockLevelValue,nil,function(value)
 		LockLevelValue = value
