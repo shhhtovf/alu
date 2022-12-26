@@ -401,7 +401,7 @@ local function ACPS_fake_script() -- TextButton_2.LocalScript
 		setclipboard("No Ad Right Now!")
 		script.Parent.Text = "Check Your Clipboard!"
 		wait(2)
-		script.Parent.Text = "Join Discord"
+		script.Parent.Text = "Copy Link"
 	end)
 end
 coroutine.wrap(ACPS_fake_script)()
@@ -412,7 +412,7 @@ local function OWZJ_fake_script() -- TextButton_3.LocalScript
 		setclipboard("No Ad Right Now!")
 		script.Parent.Text = "Check Your Clipboard!"
 		wait(2)
-		script.Parent.Text = "Join Discord"
+		script.Parent.Text = "Copy Link"
 	end)
 end
 coroutine.wrap(OWZJ_fake_script)()
@@ -423,7 +423,7 @@ local function XYFE_fake_script() -- TextButton_4.LocalScript
 		setclipboard("No Ad Right Now!")
 		script.Parent.Text = "Check Your Clipboard!"
 		wait(2)
-		script.Parent.Text = "Join Discord"
+		script.Parent.Text = "Copy Link"
 	end)
 end
 coroutine.wrap(XYFE_fake_script)()
@@ -434,7 +434,7 @@ local function STYKLRQ_fake_script() -- TextButton_5.LocalScript
 		setclipboard("No Ad Right Now!")
 		script.Parent.Text = "Check Your Clipboard!"
 		wait(2)
-		script.Parent.Text = "Join Discord"
+		script.Parent.Text = "Copy Link"
 	end)
 end
 coroutine.wrap(STYKLRQ_fake_script)()
@@ -445,7 +445,7 @@ local function OSPERF_fake_script() -- TextButton_6.LocalScript
 		setclipboard("No Ad Right Now!")
 		script.Parent.Text = "Check Your Clipboard!"
 		wait(2)
-		script.Parent.Text = "Join Discord"
+		script.Parent.Text = "Copy Link"
 	end)
 end
 coroutine.wrap(OSPERF_fake_script)()
@@ -456,7 +456,7 @@ local function LFGY_fake_script() -- TextButton_7.LocalScript
 		setclipboard("No Ad Right Now!")
 		script.Parent.Text = "Check Your Clipboard!"
 		wait(2)
-		script.Parent.Text = "Join Discord"
+		script.Parent.Text = "Copy Link"
 	end)
 end
 coroutine.wrap(LFGY_fake_script)()
@@ -467,7 +467,7 @@ local function RPUZNUQ_fake_script() -- TextButton_8.LocalScript
 		setclipboard("No Ad Right Now!")
 		script.Parent.Text = "Check Your Clipboard!"
 		wait(2)
-		script.Parent.Text = "Join Discord"
+		script.Parent.Text = "Copy Link"
 	end)
 end
 coroutine.wrap(RPUZNUQ_fake_script)()
@@ -478,7 +478,7 @@ local function DYGC_fake_script() -- TextButton_9.LocalScript
 		setclipboard("No Ad Right Now!")
 		script.Parent.Text = "Check Your Clipboard!"
 		wait(2)
-		script.Parent.Text = "Join Discord"
+		script.Parent.Text = "Copy Link"
 	end)
 end
 coroutine.wrap(DYGC_fake_script)()
@@ -489,7 +489,7 @@ local function CECB_fake_script() -- TextButton_10.LocalScript
 		setclipboard("No Ad Right Now!")
 		script.Parent.Text = "Check Your Clipboard!"
 		wait(2)
-		script.Parent.Text = "Join Discord"
+		script.Parent.Text = "Copy Link"
 	end)
 end
 coroutine.wrap(CECB_fake_script)()
