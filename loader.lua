@@ -1,5 +1,7 @@
 
 repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shhhtovf/alu/main/Ads.lua"))()
+wait(5)
 local PlaceId = game.PlaceId
 if PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/shhhtovf/alu/main/game/bloxfruit.lua"))()
