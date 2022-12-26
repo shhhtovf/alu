@@ -17,6 +17,7 @@ local UICorner_4 = Instance.new("UICorner")
 local LAble = Instance.new("TextLabel")
 local LAble_2 = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
+local TextButton_Exit = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local UICorner_6 = Instance.new("UICorner")
@@ -75,6 +76,17 @@ Frame.BorderSizePixel = 5
 Frame.Draggable = true
 Frame.Position = UDim2.new(0.225405827, 0, 0.138688326, 0)
 Frame.Size = UDim2.new(0, 507, 0, 35)
+
+
+
+TextButton_Exit.Parent = Frame
+TextButton_Exit.BackgroundColor3 = Color3.fromRGB(0,0,0)
+TextButton_Exit.Position = UDim2.new(0,0,0,0)
+TextButton_Exit.Size = UDim2.new(0, 25, 0, 25)
+TextButton_Exit.Font = Enum.Font.FredokaOne
+TextButton_Exit.Text = "X"
+TextButton_Exit.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_Exit.TextSize = 14.000
 
 UICorner.Parent = Frame
 
