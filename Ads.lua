@@ -505,3 +505,12 @@ local function CECB_fake_script() -- TextButton_10.LocalScript
 	end)
 end
 coroutine.wrap(CECB_fake_script)()
+
+local function CECBXXX_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_Exit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(CECBXXX_fake_script)()
