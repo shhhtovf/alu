@@ -200,7 +200,7 @@ ImageLabel_3.Parent = Ads
 ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_3.Position = UDim2.new(0.103896104, 0, 0.000383792911, 0)
 ImageLabel_3.Size = UDim2.new(0, 182, 0, 182)
-ImageLabel_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_3.Image = "rbxassetid://11939355578"
 
 UICorner_8.Parent = ImageLabel_3
 
@@ -221,7 +221,7 @@ ImageLabel_4.Parent = Ads
 ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_4.Position = UDim2.new(0.103896111, 0, 0.310333788, 0)
 ImageLabel_4.Size = UDim2.new(0, 182, 0, 182)
-ImageLabel_4.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_4.Image = "rbxassetid://11939355578"
 
 UICorner_10.Parent = ImageLabel_4
 
@@ -242,7 +242,7 @@ ImageLabel_5.Parent = Ads
 ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_5.Position = UDim2.new(0.103896104, 0, 0.208383784, 0)
 ImageLabel_5.Size = UDim2.new(0, 182, 0, 182)
-ImageLabel_5.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_5.Image = "rbxassetid://11939355578"
 
 UICorner_12.Parent = ImageLabel_5
 
@@ -263,7 +263,7 @@ ImageLabel_6.Parent = Ads
 ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_6.Position = UDim2.new(0.103896104, 0, 0.104833797, 0)
 ImageLabel_6.Size = UDim2.new(0, 182, 0, 182)
-ImageLabel_6.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_6.Image = "rbxassetid://11939355578"
 
 UICorner_14.Parent = ImageLabel_6
 
@@ -284,7 +284,7 @@ ImageLabel_7.Parent = Ads
 ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_7.Position = UDim2.new(0.103896111, 0, 0.413333774, 0)
 ImageLabel_7.Size = UDim2.new(0, 182, 0, 182)
-ImageLabel_7.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_7.Image = "rbxassetid://11939355578"
 
 UICorner_16.Parent = ImageLabel_7
 
@@ -305,7 +305,7 @@ ImageLabel_8.Parent = Ads
 ImageLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_8.Position = UDim2.new(0.103896111, 0, 0.514833808, 0)
 ImageLabel_8.Size = UDim2.new(0, 182, 0, 182)
-ImageLabel_8.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_8.Image = "rbxassetid://11939355578"
 
 UICorner_18.Parent = ImageLabel_8
 
@@ -326,7 +326,7 @@ ImageLabel_9.Parent = Ads
 ImageLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_9.Position = UDim2.new(0.103896111, 0, 0.621833801, 0)
 ImageLabel_9.Size = UDim2.new(0, 182, 0, 182)
-ImageLabel_9.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_9.Image = "rbxassetid://11939355578"
 
 UICorner_20.Parent = ImageLabel_9
 
@@ -347,7 +347,7 @@ ImageLabel_10.Parent = Ads
 ImageLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_10.Position = UDim2.new(0.103896111, 0, 0.727833807, 0)
 ImageLabel_10.Size = UDim2.new(0, 182, 0, 182)
-ImageLabel_10.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_10.Image = "rbxassetid://11939355578"
 
 UICorner_22.Parent = ImageLabel_10
 
@@ -368,7 +368,7 @@ ImageLabel_11.Parent = Ads
 ImageLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_11.Position = UDim2.new(0.103896111, 0, 0.833833814, 0)
 ImageLabel_11.Size = UDim2.new(0, 182, 0, 182)
-ImageLabel_11.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel_11.Image = "rbxassetid://11939355578"
 
 UICorner_24.Parent = ImageLabel_11
 
