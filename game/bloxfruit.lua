@@ -3278,7 +3278,7 @@
 					NameMon = "Sweet Thief"
 					CFrameQuest = CFrame.new(147.52256774902344, 24.793832778930664, -12775.3583984375)
 					CFrameMon = CFrame.new(53,75.4,-12761.8)
-	 elseif MyLevel == 2375 or MyLevel <= 2399 then
+	 elseif MyLevel >= 2375 then
 					Ms = "Candy Rebel [Lv. 2375]"
 					NameQuest = "ChocQuest2"
 					LevelQuest = 2
@@ -9903,8 +9903,8 @@ coroutine.wrap(NQGA_fake_script)()
 			["Haunted Castle"] = CFrame.new(-9509.34961, 142.130661, 5535.16309),
 			["Peanut Island"] = CFrame.new(-2131, 38, -10106),
 			["Ice Cream Island"] = CFrame.new(-950, 59, -10907),
-			["CakeLoaf"] = CFrame.new(-1762, 38, -11878)
-			["Chistmas Island"] = CFrame.new(-1080.495, 14.6929169, -14455.915, 0.98514092, -7.93803849e-08, -0.171747908, 8.63044178e-08, 1, 3.28482983e-08, 0.171747908, -4.71828088e-08, 0.98514092)
+			["CakeLoaf"] = CFrame.new(-1762, 38, -11878),
+			["Chistmas Island"] = CFrame.new(-1080.495, 14.6929169, -14455.915)
 		}
 		-- NPC
 		NPC = {
