@@ -13,6 +13,13 @@ elseif PlaceId == 8396586868 then
       Title = "Alucard Hub - Notifiction", 
       Text = "In Dev!"
   })
+elseif PlaceId == 1730877806 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/shhhtovf/alu/main/game/Gpo.lua"))()
+  game.StarterGui:SetCore("SendNotification", {
+      Icon = "rbxassetid://10845671105";
+      Title = "Alucard Hub - Notifiction", 
+      Text = "In Dev!"
+  })
 else
   game.StarterGui:SetCore("SendNotification", {
       Icon = "rbxassetid://10845671105";
