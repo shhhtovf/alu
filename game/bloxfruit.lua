@@ -3875,13 +3875,27 @@
 					NameMon = "Sweet Thief"
 					CFrameQuest = CFrame.new(147.52256774902344, 24.793832778930664, -12775.3583984375)
 					CFrameMon = CFrame.new(53,75.4,-12761.8)
-	 elseif MyLevel >= 2375 then
+	 elseif MyLevel == 2375 or MyLevel <= 2399 then
 					Ms = "Candy Rebel [Lv. 2375]"
 					NameQuest = "ChocQuest2"
 					LevelQuest = 2
 					NameMon = "Candy Rebel"
 					CFrameQuest = CFrame.new(147.52256774902344, 24.793832778930664, -12775.3583984375)
 					CFrameMon = CFrame.new(53,75.4,-12761.8)
+				 elseif MyLevel == 2400 or MyLevel <= 2424 then
+					Ms = "Candy Pirate [Lv. 2400]"
+					NameQuest = "CandyQuest1"
+					LevelQuest = 1
+					NameMon = "Candy Pirate"
+					CFrameQuest = CFrame.new(-1146.5,14.2,-14445.7)
+					CFrameMon = CFrame.new(-1078.86,110.16,14477.01)
+				 elseif MyLevel >= 2425 then
+					Ms = "Snow Demon [Lv. 2425]"
+					NameQuest = "CandyQuest1"
+					LevelQuest = 2
+					NameMon = "Snow Demon"
+					CFrameQuest = CFrame.new(-1146.5,14.2,-14445.7)
+					CFrameMon = CFrame.new(-1078.86,110.16,14477.01)
 				end
 			end
 		end
