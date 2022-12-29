@@ -3298,7 +3298,7 @@
 					LevelQuest = 2
 					NameMon = "Snow Demon"
 					CFrameQuest = CFrame.new(-1146.5,14.2,-14445.7)
-					CFrameMon = CFrame.new(-1078.86,110.16,14477.01)
+					CFrameMon = CFrame.new(-1078.86,110.16,-14477.01)
 				end
 			end
 		else
@@ -3895,7 +3895,7 @@
 					LevelQuest = 2
 					NameMon = "Snow Demon"
 					CFrameQuest = CFrame.new(-1146.5,14.2,-14445.7)
-					CFrameMon = CFrame.new(-1078.86,110.16,14477.01)
+					CFrameMon = CFrame.new(-1078.86,110.16,-14477.01)
 				end
 			end
 		end
