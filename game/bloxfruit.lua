@@ -5033,7 +5033,7 @@
 		end
 	end)
 	FastTween = false
-	AutoFarmTab:Toggle("Very Fast Tween ( Not Recommend For KaiTun )", false,function(a)
+	AutoFarmTab:Toggle("Farm Fast Mode (Use With Auto Farm)**Recomeded For Kaitun**", false,function(a)
 		FastTween = a
 	end)
 	
