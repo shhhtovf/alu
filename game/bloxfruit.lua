@@ -2756,12 +2756,12 @@
 					CFrameMon = CFrame.new(-1267.89001, 66.2034225, -531.818115, -0.813996196, -5.25169774e-08, -0.580869019, -5.58769671e-08, 1, -1.21082593e-08, 0.580869019, 2.26011476e-08, -0.813996196)
 				elseif MyLevel == 30 or MyLevel <= 89 then -- Galley Captain
 					Nonquest = true
-					Ms = "Galley Captain [Lv. 650]"
-					NameQuest = "FountainQuest"
-					LevelQuest = 2
-					NameMon = "Galley Captain"
-					CFrameQuest = CFrame.new(5259.81982, 37.3500175, 4050.0293, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
-					CFrameMon = CFrame.new(5782.90186, 94.5326462, 4716.78174, 0.361808896, -1.24757526e-06, -0.932252586, 2.16989656e-06, 1, -4.96097414e-07, 0.932252586, -1.84339774e-06, 0.361808896)
+					Ms = "Royal Squad [Lv. 525]"
+					NameQuest = "SkyExp2Quest"
+					LevelQuest = 1
+					NameMon = "Royal Squad"
+					CFrameQuest = CFrame.new(-7906.81592, 5634.6626, -1411.99194, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+					CFrameMon = CFrame.new(-7555.04199, 5606.90479, -1303.24744, -0.896107852, -9.6057462e-10, -0.443836004, -4.24974544e-09, 1, 6.41599973e-09, 0.443836004, 7.63560326e-09, -0.896107852)
 				elseif MyLevel == 90 or MyLevel <= 99 then -- Snow Bandits
 					Nonquest = false
 					Ms = "Snow Bandit [Lv. 90]"
