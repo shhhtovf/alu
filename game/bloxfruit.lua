@@ -4882,7 +4882,7 @@
 						end
 					end
 				end
-				fastWait(.05)
+				fastWait()
 			end
 		end)
 		spawn(function()
@@ -4979,13 +4979,13 @@
 	spawn(function()
 		game:GetService("RunService").Stepped:Connect(function()
 			pcall(function()
-				CombatFrameworkR.activeController.hitboxMagnitude = 55
+				CombatFrameworkR.activeController.hitboxMagnitude = 100
 				if Usefastattack then
 					if fastattack then
 						if game.Players.LocalPlayer.Character:FindFirstChild("Black Leg") then
-							CombatFrameworkR.activeController.timeToNextAttack = 3
+							CombatFrameworkR.activeController.timeToNextAttack = 0
 						elseif game.Players.LocalPlayer.Character:FindFirstChild("Electro") then
-							CombatFrameworkR.activeController.timeToNextAttack = 2
+							CombatFrameworkR.activeController.timeToNextAttack = 0
 						else
 							CombatFrameworkR.activeController.timeToNextAttack = 0
 						end
@@ -5020,7 +5020,7 @@
 			if Auto_Farm then
 				MainAutoFarmFunction:Update(Ms,NameQuest,LevelQuest,NameMon,CFrameMon,CFrameQuest)
 			end
-			fastWait(.05)
+			fastWait()
 		end
 	end)
 	AutoFarmTab:Toggle("Auto Farm Level", getgenv().Setting["Auto Farm Level"],function(a)
