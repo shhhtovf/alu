@@ -2762,7 +2762,7 @@
 					NameMon = "Royal Squad"
 					CFrameQuest = CFrame.new(-7906.81592, 5634.6626, -1411.99194, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 					CFrameMon = CFrame.new(-7555.04199, 5606.90479, -1303.24744, -0.896107852, -9.6057462e-10, -0.443836004, -4.24974544e-09, 1, 6.41599973e-09, 0.443836004, 7.63560326e-09, -0.896107852)
-				elseif MyLevel >= 70 and MyLevel <= 89 then
+				elseif MyLevel == 70 and MyLevel <= 89 then
 					Nonquest = false
 					Ms = "Desert Officer [Lv. 70]"
 					NameQuest = "DesertQuest"
@@ -2873,7 +2873,7 @@
 					LevelQuest = 2
 					NameMon = "Fishman Commando"
 					CFrameQuest = CFrame.new(61122.5625, 18.4716396, 1568.16504)
-					CFrameMon = CFrame.new(60946.6094, 48.6735229, 1525.916871)
+					CFrameMon = CFrame.new(61948.3,134.2,1558.3)
 				elseif MyLevel == 450 or MyLevel <= 474 then 
 					Nonquest = false
 					Ms = "God's Guard [Lv. 450]"
