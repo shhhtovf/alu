@@ -3,6 +3,7 @@
 		getgenv().Setting = {
 			["Join Team"] = "Pirate", -- "Pirate","Marine"
 			["Auto Farm Level"] = false,
+			["Fast Farm Level"] = false,
 			
 			-- Farm Etc
 			["Farm Bone"] = false,
@@ -2655,7 +2656,6 @@
 		local foundAnything = ""
 		local actualHour = os.date("!*t").hour
 		local Deleted = false
-		 --[[
 		 local File = pcall(function()
 			AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
 		 end)
@@ -2663,7 +2663,6 @@
 			table.insert(AllIDs, actualHour)
 			writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
 		 end
-		 ]]
 		function TPReturner()
 			local Site;
 			if foundAnything == "" then
@@ -2688,7 +2687,7 @@
 						else
 							if tonumber(actualHour) ~= tonumber(Existing) then
 								local delFile = pcall(function()
-									-- delfile("NotSameServers.json")
+									delfile("NotSameServers.json")
 									AllIDs = {}
 									table.insert(AllIDs, actualHour)
 								end)
@@ -2700,7 +2699,7 @@
 						table.insert(AllIDs, ID)
 						wait()
 						pcall(function()
-							-- writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+							writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
 							wait()
 							game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
 						end)
@@ -2746,7 +2745,7 @@
 					NameMon = "Monkey"
 					CFrameQuest = CFrame.new(-1598.08911, 35.5501175, 153.377838, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 					CFrameMon = CFrame.new(-1402.74609, 98.5633316, 90.6417007, 0.836947978, 0, 0.547282517, -0, 1, -0, -0.547282517, 0, 0.836947978)
-				elseif MyLevel == 15 or MyLevel <= 29 then -- Gorilla
+				elseif MyLevel == 15 or MyLevel <= 19 then -- Gorilla
 					Nonquest = false
 					Ms = "Gorilla [Lv. 20]"
 					NameQuest = "JungleQuest"
@@ -2754,7 +2753,7 @@
 					NameMon = "Gorilla"
 					CFrameQuest = CFrame.new(-1598.08911, 35.5501175, 153.377838, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 					CFrameMon = CFrame.new(-1267.89001, 66.2034225, -531.818115, -0.813996196, -5.25169774e-08, -0.580869019, -5.58769671e-08, 1, -1.21082593e-08, 0.580869019, 2.26011476e-08, -0.813996196)
-				elseif MyLevel == 30 or MyLevel <= 89 then -- Galley Captain
+				elseif MyLevel == 20 or MyLevel <= 99 then -- Galley Captain
 					Nonquest = true
 					Ms = "Royal Squad [Lv. 525]"
 					NameQuest = "SkyExp2Quest"
@@ -5033,7 +5032,7 @@
 		end
 	end)
 	FastTween = false
-	AutoFarmTab:Toggle("Farm Fast Mode (Use With Auto Farm)**Recomeded For Kaitun**", false,function(a)
+	AutoFarmTab:Toggle("Farm Fast Mode (Use With Auto Farm)**Recomeded For Kaitun**",getgenv().Setting["Fast Farm Level"],function(a)
 		FastTween = a
 	end)
 	
