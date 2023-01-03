@@ -1,5 +1,6 @@
 
-	if getgenv().Setting then else
+	if getgenv().Setting then 
+	else
 		getgenv().Setting = {
 			["Join Team"] = "Pirate", -- "Pirate","Marine"
 			["Auto Farm Level"] = false,
@@ -2753,7 +2754,7 @@
 					NameMon = "Gorilla"
 					CFrameQuest = CFrame.new(-1598.08911, 35.5501175, 153.377838, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 					CFrameMon = CFrame.new(-1267.89001, 66.2034225, -531.818115, -0.813996196, -5.25169774e-08, -0.580869019, -5.58769671e-08, 1, -1.21082593e-08, 0.580869019, 2.26011476e-08, -0.813996196)
-				elseif MyLevel == 20 or MyLevel <= 99 then -- Galley Captain
+				elseif MyLevel == 20 or MyLevel <= 69 then -- Galley Captain
 					Nonquest = true
 					Ms = "Royal Squad [Lv. 525]"
 					NameQuest = "SkyExp2Quest"
@@ -2761,6 +2762,14 @@
 					NameMon = "Royal Squad"
 					CFrameQuest = CFrame.new(-7906.81592, 5634.6626, -1411.99194, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 					CFrameMon = CFrame.new(-7555.04199, 5606.90479, -1303.24744, -0.896107852, -9.6057462e-10, -0.443836004, -4.24974544e-09, 1, 6.41599973e-09, 0.443836004, 7.63560326e-09, -0.896107852)
+				elseif MyLevel >= 70 and MyLevel <= 89 then
+					Nonquest = false
+					Ms = "Desert Officer [Lv. 70]"
+					NameQuest = "DesertQuest"
+					LevelQuest = 2
+					NameMon = "Desert Officer"
+					CFrameQuest = CFrame.new(894.488647, 5.14000702, 4392.43359, 0.819155693, -0, -0.573571265, 0, 1, -0, 0.573571265, 0, 0.819155693)
+					CFrameMon = CFrame.new(1617.07886, 1.5542295, 4295.54932, -0.997540116, -2.26287735e-08, -0.070099175, -1.69377223e-08, 1, -8.17798806e-08, 0.070099175, -8.03913949e-08, -0.997540116)
 				elseif MyLevel == 90 or MyLevel <= 99 then -- Snow Bandits
 					Nonquest = false
 					Ms = "Snow Bandit [Lv. 90]"
