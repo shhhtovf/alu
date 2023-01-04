@@ -1,8 +1,16 @@
-
-repeat wait() until game:IsLoaded()
-Key = "https://1.kelprepl.repl.co/getkey/AlucardHub"-- Put here key or raw link on key. Example: "https://1.kelprepl.repl.co/example", "Key_13904293482"
-Link = "https://1.kelprepl.repl.co/getkey/AlucardHub"-- Put here link. Example: "https://1.kelprepl.repl.co/example", "https://bit.ly/example"
-Script = "https://raw.githubusercontent.com/shhhtovf/alu/main/Load.lua"-- Put here your script link. Example: "https://pastebin.com/raw/example"
-
---! DON'T TOUCH ANYTHING BELOW !--
-loadstring(game:HttpGet("https://raw.githubusercontent.com/OopssSorry/FreeKeySystem/main/Lib.lua"))().Sus(Link,Script,Key)
+pcall(function()
+    if key == game:HttpGet("https://1.kelprepl.repl.co/verify/your_app_name?verify_key="..key) then
+      game.StarterGui:SetCore("SendNotification", {
+      Icon = "rbxassetid://10845671105";
+      Title = "Alucard Hub - Key Check", 
+      Text = "Correct Key!"
+      })
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/shhhtovf/alu/main/Load.lua"))()
+    else
+      game.StarterGui:SetCore("SendNotification", {
+      Icon = "rbxassetid://10845671105";
+      Title = "Alucard Hub - Key Check", 
+      Text = "Wrong Key!"
+  })
+    end
+end)
