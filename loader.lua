@@ -102,9 +102,18 @@ local function ECVLLR_fake_script() -- TextButton.LocalScript
 		local key = game:HttpGet("https://alucardhubwhitelist.000webhostapp.com/check.php?key="..text)
 		
 		if key == "Whitelisted" then
-			print("True")
+			game.StarterGui:SetCore("SendNotification", {
+      Icon = "rbxassetid://10845671105";
+      Title = "Alucard Hub - Key Check", 
+      Text = "Correct Key"
+  })
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/shhhtovf/alu/main/Load.lua"))()
 		else
-			print("False")
+			game.StarterGui:SetCore("SendNotification", {
+      Icon = "rbxassetid://10845671105";
+      Title = "Alucard Hub - Key Check", 
+      Text = "Incorrect Key"
+  })
 		end
 	end)
 end
