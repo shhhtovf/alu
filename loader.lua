@@ -21,4 +21,5 @@ if Check == "Whitelisted" then
       Title = "Alucard Hub - Key Check", 
       Text = "Loading Key Gui"
   })
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/shhhtovf/alu/main/key.lua"))()
 		end
