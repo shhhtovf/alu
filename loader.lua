@@ -1,6 +1,6 @@
 local key = _G.Key
 
-local Check = game:HttpGet("https://alucardhubwhitelist.000webhostapp.com/check.php?key="..key)
+local Check = game:HttpGet("http://alucard-hub.rf.gd/Check.php?key="..key)
 
 if Check == "Whitelisted" then
 			game.StarterGui:SetCore("SendNotification", {
