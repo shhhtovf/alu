@@ -99,7 +99,7 @@ local function ECVLLR_fake_script() -- TextButton.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		local box = script.Parent.Parent.TextBox
 		local text = box.Text
-		local key = game:HttpGet("http://alucard-hub.rf.gd/Check.php?key="..text)
+		local key = game:HttpGet("https://alu.jjtchannel.repl.co/?key="..text)
 		script.Parent.Parent.Parent.Visible = false
 		if key == "Whitelisted" then
 			game.StarterGui:SetCore("SendNotification", {
