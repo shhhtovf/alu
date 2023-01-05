@@ -1,3 +1,8 @@
+if _G.Key then
+else
+	_G.Key = "Fruk"
+end
+
 local key = _G.Key
 
 local Check = game:HttpGet("https://alu.jjtchannel.repl.co/?key="..key)
