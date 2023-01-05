@@ -99,7 +99,7 @@ local function ECVLLR_fake_script() -- TextButton.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		local box = script.Parent.Parent.TextBox
 		local text = box.Text
-		local key = game:HttpGet("https://alucardhubwhitelist.000webhostapp.com/check.php?key="..text)
+		local key = game:HttpGet("http://alucard-hub.rf.gd/Check.php?key="..text)
 		script.Parent.Parent.Parent.Visible = false
 		if key == "Whitelisted" then
 			game.StarterGui:SetCore("SendNotification", {
@@ -123,7 +123,7 @@ local function KFVE_fake_script() -- ImageButton.LocalScript
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		setclipboard("https://1.kelprepl.repl.co/getkey/AlucardHub")
+		setclipboard("http://alucard-hub.rf.gd/GetKey.php")
 	end)
 end
 coroutine.wrap(KFVE_fake_script)()
