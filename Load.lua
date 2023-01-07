@@ -167,10 +167,12 @@ local function SPLK_fake_script() -- Frame_3.LocalScript
 	wait(.4)
 	if game:HttpGet("https://alu.jjtchannel.repl.co/supported_game.php?key="..game.PlaceId) == "Supported" then
 		parent.sc.Text = "Script Check : Supported"
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/shhhtovf/alu/main/Load2.lua"))()
 		wait(1)
 		parent.Parent.Parent.Visible = false
 	else
 		parent.sc.Text = "Script Check : Not Supported!"
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/shhhtovf/alu/main/Ads.lua"))()
 		wait(1)
 		parent.Parent.Parent.Visible = false
 	end
