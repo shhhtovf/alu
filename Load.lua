@@ -183,13 +183,13 @@ local function USTEJHD_fake_script() -- TextLabel_2.LocalScript
 
 	while true do
 		wait(.5)
+		script.Parent.Text = "Conecting to The Server"
+		wait(.5)
 		script.Parent.Text = "Conecting to The Server."
 		wait(.5)
 		script.Parent.Text = "Conecting to The Server.."
 		wait(.5)
 		script.Parent.Text = "Conecting to The Server..."
-		wait(.5)
-		script.Parent.Text = "Conecting to The Server"
 		wait(.5)
 	end
 end
