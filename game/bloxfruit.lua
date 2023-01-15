@@ -1,4 +1,3 @@
-local MaxLevel = 2450
 
 	if getgenv().Setting then 
 	else
@@ -2643,6 +2642,8 @@ local MaxLevel = 2450
 	--------------------------------------------------------------------------------------------------------------------------------
 	-- Function
 	local placeId = game.PlaceId
+	local MaxLevel = 2450
+
 	if placeId == 2753915549 then
 		OldWorld = true
 	elseif placeId == 4442272183 then
@@ -2651,6 +2652,7 @@ local MaxLevel = 2450
 		ThreeWorld = true
 	end
 	StatsBypass = "NoBypassTP"
+
 	
 	function HopServer()
 		local PlaceID = game.PlaceId
