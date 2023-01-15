@@ -11797,7 +11797,6 @@ coroutine.wrap(NQGA_fake_script)()
 	end
 	Devil_Fruit_Sniper_Tab:Toggle("Auto Store Fruits",true,function(a)
 		Store = a
-		end
 	end)
 	spawn(function()
 		while wait() do
