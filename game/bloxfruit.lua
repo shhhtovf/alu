@@ -221,6 +221,7 @@
 	end
 	
 	function library:Window(name,game)
+		
 		if getgenv().Theme ~= nil then
 			ColorII = getgenv().Theme.Tab.Color
 	
@@ -233,7 +234,7 @@
 			ColorIIIIIII = getgenv().Theme.Slider.LeftColor
 			ColorIIIIIIII = getgenv().Theme.Slider.RightColor
 		else
-		ColorII = Color3.fromRGB(150, 150, 255)
+			ColorII = Color3.fromRGB(150, 150, 255)
 	
 			ColorIII = Color3.fromRGB(150, 150, 255)
 			ColorIIII = Color3.fromRGB(150, 150, 255)
@@ -331,7 +332,7 @@
 		Toggleui.Size = UDim2.new(0, 120, 0, 30)
 		Toggleui.Font = Enum.Font.SourceSansSemibold
 		Toggleui.Text = "[ Right Control ]"
-		Toggleui.TextColor3 = Color3.fromRGB(255, 0, 0)
+		Toggleui.TextColor3 = ColorII
 		Toggleui.TextSize = 20.000
 	
 		HideTab.Name = "HideTab"
@@ -819,7 +820,7 @@
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{TextColor3 = Color3.fromRGB(255, 0, 0)}
+						{TextColor3 = ColorII}
 					):Play()
 				end)
 	
@@ -967,7 +968,7 @@
 	
 				local function SetState(state)
 					if state then
-						TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(255, 0, 0)}):Play()
+						TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = ColorII}):Play()
 						TweenService:Create(TickCover, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {Position = UDim2.new(1, -30, 0.5, -7), Size = UDim2.new(0, 0, 0, 0)}):Play()
 					elseif not state then
 						TweenService:Create(Title, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {TextColor3 = Color3.fromRGB(185, 185, 185)}):Play()
@@ -1142,7 +1143,7 @@
 						TweenService:Create(
 							Title,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad),
-							{TextColor3 = Color3.fromRGB(255, 0, 0)}
+							{TextColor3 = ColorII}
 						):Play()
 					end
 				end)
@@ -1294,7 +1295,7 @@
 					else
 						if options[presetoption] ~= nil then
 							SelectedOption = options[presetoption]
-							TitleToggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+							TitleToggle.TextColor3 = ColorII
 							callback(options[presetoption])
 						else
 							SelectedOption = "nil"
@@ -1311,7 +1312,7 @@
 						end
 						if ReturnCallBack ~= nil then
 							SelectedOption = ReturnCallBack
-							TitleToggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+							TitleToggle.TextColor3 = ColorII
 							callback(ReturnCallBack)
 						else
 							SelectedOption = "nil"
@@ -2043,7 +2044,7 @@
 	
 				Line.Name = "Line"
 				Line.Parent = SectionContent
-				Line.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+				Line.BackgroundColor3 = ColorII
 				Line.BackgroundTransparency = 1.000
 				Line.Position = UDim2.new(0, 0, 0.298245609, 0)
 				Line.Size = UDim2.new(0, 475, 0, 5)
@@ -2051,7 +2052,7 @@
 	
 				Button.Name = "Button"
 				Button.Parent = Line
-				Button.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+				Button.BackgroundColor3 = ColorII
 				Button.BackgroundTransparency = 1.000
 				Button.BorderSizePixel = 0
 				Button.ClipsDescendants = true
@@ -2101,7 +2102,7 @@
 				Label.RichText = true
 				Label.Text = text
 				Label.Font = Enum.Font.SourceSansBold
-				Label.TextColor3 = Color3.fromRGB(255, 0, 0)
+				Label.TextColor3 = ColorII
 				Label.TextSize = 18.000
 	
 				UICorner.Parent = Label
@@ -2382,7 +2383,7 @@
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad),
-						{TextColor3 = Color3.fromRGB(255, 0, 0)}
+						{TextColor3 = ColorII}
 					):Play()
 				end)
 	
