@@ -123,7 +123,7 @@ local function KFVE_fake_script() -- ImageButton.LocalScript
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		setclipboard("http://alucard-hub.rf.gd/GetKey.php")
+		setclipboard("http://alucard-hub.rf.gd/GetKey.html")
 	end)
 end
 coroutine.wrap(KFVE_fake_script)()
