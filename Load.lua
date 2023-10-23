@@ -158,7 +158,7 @@ local function SPLK_fake_script() -- Frame_3.LocalScript
 	parent.gamee.Text = "Game Check : " .. game.Name
 	wait(1)
 	if game:GetService("UserInputService").TouchEnabled == true then
-		parent.device.Text = "Device Check : Mobile/Touch Able Laptop"
+		parent.device.Text = "Device Check : Mobile/Touchable Laptop"
 	else
 		parent.device.Text = "Device Check : Pc/Laptop"
 	end
