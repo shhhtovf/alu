@@ -4350,8 +4350,6 @@
 		):Play()
 		NoClip = false
 	end
-	
-	local CameraShakeInstanceSet = require(game.Players.LocalPlayer.PlayerScripts.CombatFramework.CameraShaker.CameraShakeInstance)
 	function AutoFarm(NameMonster,RemoteQuestGet,LevelQuestGet,TextQuestName,WaitMonSpawnCFrame,NPCQuestCFrame,FarmMode)
 		local AutoFarmfunc = {}
 	
