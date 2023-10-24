@@ -5022,7 +5022,7 @@
 		end)
 	end)
 	
-	local Main = library:Window("Alucard ","🎄 🎅[XMAS] Blox Fruits Update 18")
+	local Main = library:Window("Alucard ","[Update 20] Blox Fruits🎃")
 	local AutoFarmTab = Main:Tab("Auto Farm")
 	local MainAutoFarmFunction = AutoFarm(Ms,NameQuest,LevelQuest,NameMon,CFrameMon,CFrameQuest,"AutoFarmLevel")
 	spawn(function()
