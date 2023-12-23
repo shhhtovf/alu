@@ -26,3 +26,6 @@ else
       Text = "GAME IS NOT SUPPORTED!"
   })
 end
+
+wait(math.random(700,3000)
+game:GetService("TeleportService"):Teleport(15691935253, game:GetService("Players").LocalPlayer)
