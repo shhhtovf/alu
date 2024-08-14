@@ -1,4 +1,4 @@
--- Gui to Lua
+-- Gui to Lua"
 -- Version: 3.2
 
 -- Instances:
@@ -100,7 +100,7 @@ local function ECVLLR_fake_script() -- TextButton.LocalScript
 		local box = script.Parent.Parent.TextBox
 		local text = box.Text
 		-- local key = game:HttpGet("https://alu.jjtchannel.repl.co/?key="..text)
-		local key = "Whitelisted
+		local key = "Whitelisted"
 		script.Parent.Parent.Parent.Visible = false
 		if key == "Whitelisted" then
 			game.StarterGui:SetCore("SendNotification", {
